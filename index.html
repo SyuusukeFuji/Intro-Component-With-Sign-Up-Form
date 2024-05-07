@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+    <section id="imaginary-panel">
+      <section id="imaginary-left" class="internal-panel">
+        <h1>Learn to code by watching others</h1>
+        <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+          but understanding how developers think is invaluable.</p>
+      </section>
+      <section id="imaginary-right" class="internal-panel">
+        <section id="trial-panel" class="shadow"><p><span class="bolder">Try it free 7 days</span> then $20/mo. thereafter</p></section>
+
+        <section id="data-panel" class="shadow">
+          <form id="sign-form"  method="post" action="index.html">
+            <input type="text" required class="data-field" name="" id="field-name" placeholder="First Name">
+            <img id="error-icon1" src="images\icon-error.svg" class="error-icon" alt="error icon">
+            <p id="error-msg1" class="error-msgs">First name cannot be empty</p>
+            <input type="text" required class="data-field" name="" id="field-surname" placeholder="Last Name">
+            <img id="error-icon2" src="images\icon-error.svg" class="error-icon" alt="error icon">
+            <p id="error-msg2" class="error-msgs">Last name cannot be empty</p>
+            <input type="email" required class="data-field" name="" id="field-email" placeholder="Email Address">
+            <img id="error-icon3" src="images\icon-error.svg" class="error-icon" alt="error icon">
+            <p id="error-msg3" class="error-msgs">Looks like this is not an email</p>
+            <input type="password" required class="data-field" name="" id="field-pass" placeholder="Password">
+            <img id="error-icon4" src="images\icon-error.svg" class="error-icon" alt="error icon">
+            <p id="error-msg4" class="error-msgs">Password cannot be empty</p>
+            <button id="submit-bt" class="bt-shadow" type="submit">Claim your free trial</button>
+            <p id="tas-line">By clicking the button, you are agreeing to our <a id="tas-link" href="">Terms and Services</a></p>
+          </form>
+          
+          
+
+        </section>
+
+      </section>
+    </section>
+  </main>  
+  
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">SyuusukeFuji</a>.
+    </p>
+  </footer>
+  <script src="index.js"></script>
+</body>
+</html>

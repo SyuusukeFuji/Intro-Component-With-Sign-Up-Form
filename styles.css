@@ -1,0 +1,383 @@
+:root{
+    --Red: hsl(0, 100%, 74%); 
+    --Green: hsl(154, 59%, 51%);
+    --Blue: hsl(248, 32%, 49%);
+    --DarkBlue: hsl(249, 10%, 26%);
+    --GrayishBlue: hsl(246, 25%, 77%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html{
+    font-size: 16px;
+}
+
+body{
+    max-width: 1440px;
+    min-width: 100vw;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+
+main{
+    background-image: linear-gradient(90deg,
+    rgba(228, 41, 41, 0.527),
+    rgba(228, 41, 41, 0.527)), url("images/bg-intro-desktop.png");
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#imaginary-panel{
+    
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+}
+
+.internal-panel{
+    width:50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#imaginary-left{
+    
+    color: white;
+    padding-left: 2rem;
+    padding-right: 4rem;
+}
+
+h1{
+    font-size: 2.5rem;
+    line-height: 3rem;
+    margin-bottom: 2rem;
+}
+
+#imaginary-right{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.shadow{
+    box-shadow: 0px 8px 2px 0px rgba(0,0,0,0.21)
+}
+
+#trial-panel{
+ background-color: var(--Blue);
+ width: 100%;
+ height: 3rem;
+ border-radius: 0.5rem;
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+ color: white;
+ font-size: 0.8rem;
+ ;   
+}
+.bolder{
+    font-weight: 600;
+
+}
+
+#data-panel{
+    width: 100%;
+    height: 30rem;
+    border-radius: 0.5rem;
+    background-color: white;
+}
+
+#sign-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    height: 100%;
+    padding: 2rem;
+    border-radius: 2.5rem;
+}
+
+.data-field{
+    width:100%;
+    height: 2.8rem;
+    padding: 1rem;
+    border: 1px solid var(--GrayishBlue);
+    border-radius: 0.2rem;
+    font-weight: 500;
+}
+
+.error-border{
+    border: 1px solid var(--Red);
+}
+
+.error-icon{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    right: 15%;
+    opacity: 0;
+}
+
+#error-icon1{
+    top: 38%;
+    
+}
+
+#error-icon2{
+    top: 47%;
+}
+
+#error-icon3{
+    top: 56%;
+}
+
+#error-icon4{
+    top: 65%;
+    
+}
+
+.error-msgs{
+    color: var(--Red);
+    text-align: right;
+    width:100%;
+    font-size: 0.6rem;
+    font-style: italic;
+    font-weight:500;
+    opacity: 0;
+}
+
+#submit-bt{
+    width: 100%;
+    height: 2.8rem;
+    color: white;
+    background-color: var(--Green);
+    border: none;
+    border-radius: 0.3rem;
+}
+
+#submit-bt:hover{
+    cursor: pointer;
+}
+
+.bt-shadow{
+    box-shadow: 0px 3px 0px 0px rgba(11,161,104,1);
+}
+
+#tas-line{
+    font-size: 0.6rem;
+    color: var(--GrayishBlue);
+}
+
+#tas-link{
+    text-decoration: none;
+    color: var(--Red);
+    font-weight: 600;
+}
+
+@media screen and (max-width: 412px){
+    html{
+        font-size: 0.90rem;
+    }
+
+    #imaginary-panel{
+        flex-direction: column;
+        height: 90%;
+        width: 90%;
+        
+    }   
+
+    #imaginary-left{
+        height: 35%;
+        width: 100%;
+        text-align: center;
+    }
+
+    #imaginary-right{
+        height: 65%;
+        width: 100%;
+    }
+
+    #trial-panel{
+        height: 4rem;
+        text-align: center;
+        font-size: 1rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        margin-bottom: 1.3rem;
+    }
+
+    .error-icon{
+        right: 20%;
+    }
+
+    #error-icon1{
+        top: 53%;
+    
+        
+    }
+    
+    #error-icon2{
+        top: 60.5%;
+        
+        
+    }
+    
+    #error-icon3{
+        top: 68.5%;
+        
+    }
+    
+    #error-icon4{
+        top: 75.9%;
+        
+    }
+
+
+}
+
+
+@media screen and (max-width: 390px) {
+    html{
+        font-size: 0.85rem;
+    }
+
+    main{
+        background-image: linear-gradient(90deg,
+        rgba(228, 41, 41, 0.527),
+        rgba(228, 41, 41, 0.527)), url("images/bg-intro-mobile.png");
+    }
+    
+    #imaginary-panel{
+        flex-direction: column;
+        height: 90%;
+        width: 90%;
+        
+    }
+
+    #imaginary-left{
+        height: 35%;
+        width: 100%;
+        text-align: center;
+    }
+
+    #imaginary-right{
+        height: 65%;
+        width: 100%;
+    }
+
+    #trial-panel{
+        height: 4rem;
+        text-align: center;
+        font-size: 1rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        margin-bottom: 1.3rem;
+    }
+
+    .error-icon{
+        right: 20%;
+    }
+
+    #error-icon1{
+        top: 53%;
+        
+        
+    }
+    
+    #error-icon2{
+        top: 60.5%;
+        
+        
+    }
+    
+    #error-icon3{
+        top: 68.5%;
+        
+    }
+    
+    #error-icon4{
+        top: 75.9%;
+        
+    }
+
+
+}
+
+@media screen and (max-width: 375px) {
+    html{
+        font-size: 0.8rem;
+    }
+
+    
+
+    #imaginary-panel{
+        flex-direction: column;
+        height: 90%;
+        width: 90%;
+    }
+    #imaginary-left{
+        
+    }
+
+    h1{
+        font-size: 1.5rem;
+        text-align: center;
+        line-height: 1.8rem;
+    }
+
+    #imaginary-right{
+        
+    }
+
+    #trial-panel{
+        height: 6rem;
+        text-align: center;
+        font-size: 1rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        margin-bottom: 1.3rem;
+    }
+
+    #data-panel{
+        padding: 0.0045rem;
+    }
+
+    .error-icon{
+        right: 18%;
+    }
+
+    #error-icon1{
+        top: 54%;
+        
+    }
+    
+    #error-icon2{
+        top: 62%;
+        
+    }
+    
+    #error-icon3{
+        top: 69.5%;
+    }
+    
+    #error-icon4{
+        top: 76.9%;
+        
+    }
+
+}
